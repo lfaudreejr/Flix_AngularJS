@@ -1,0 +1,17 @@
+<section class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+        <button ng-click="$ctrl.leftClick()">Left</button>
+      </div>
+      <div class="movie col-md-2" ng-repeat="movie in $ctrl.mediator">
+        <div class="movie-data">
+          <img ng-src="https://image.tmdb.org/t/p/w1280/{{movie.poster_path}}" alt="" class="img-thumbnail" />
+        </div>
+      </div>
+      <div class="col-md-1">
+        <button ng-click="$ctrl.rightClick()">Right</button>
+      </div>
+    </div>
+  </div>
+</section>
